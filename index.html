@@ -38,6 +38,30 @@
         z-index:2;
 
     }
+    .box::before{
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 120%;
+        background: linear-gradient(#00ccff,#d500f9);
+        animation: rotate 3s linear infinite;
+    }
+    .box::after{
+        content: "";
+        position: absolute;
+        background: #0e1538;
+        inset:5px;
+        border-radius:20px;
+    }
+    @keyframes rotate{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+
+    }*/
 </style>
 <body>
     <div class="box">
